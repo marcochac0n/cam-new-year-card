@@ -1,5 +1,5 @@
 // 🔒 CHANGE THIS DATE ONLY
-const targetDate = new Date("2025-12-28T23:59:59-06:00");
+const targetDate = new Date("2025-12-31T23:59:59-06:00");
 
 const countdownSection = document.getElementById("countdown-section");
 const letterSection = document.getElementById("letter-section");
