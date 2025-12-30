@@ -1,0 +1,156 @@
+/* ---- Base ---- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Georgia", "Times New Roman", serif;
+  background: radial-gradient(#f5d89c, #e8c97a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6b2e0f;
+}
+
+/* ---- Card ---- */
+.card {
+  background: #fffaf2;
+  width: min(90%, 420px);
+  padding: 2.5rem 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+}
+
+/* ---- Typography ---- */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.subtitle {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  width: 50px;
+  height: 4px;
+  background: #e4b94f;
+  margin: 0.8rem auto 1.8rem;
+  border-radius: 2px;
+}
+
+/* ---- Countdown ---- */
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.countdown div {
+  border: 1px solid #e6c86e;
+  border-radius: 10px;
+  padding: 0.8rem 0.4rem;
+  background: #fffdf7;
+}
+
+.countdown span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.countdown small {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+
+/* ---- Date ---- */
+.date {
+  font-size: 0.85rem;
+  margin-bottom: 1.8rem;
+}
+
+.date span {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+/* ---- Seal ---- */
+.seal {
+  width: 80px;
+  height: 80px;
+  background: #8b1e1e;
+  border-radius: 50%;
+  margin: 0 auto 1.2rem;
+  position: relative;
+  box-shadow: inset 0 0 0 6px #a83333;
+}
+
+.seal::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  background: #8b1e1e;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.seal-inner {
+  color: #f2c9c9;
+  font-size: 1.8rem;
+  line-height: 80px;
+}
+
+/* ---- Locked ---- */
+.locked-text {
+  font-size: 0.9rem;
+}
+
+/* ---- Letter ---- */
+#letter-section {
+  text-align: left;
+}
+
+#letter-section p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.signature {
+  margin-top: 2rem;
+  text-align: right;
+  font-style: italic;
+}
+
+/* ---- Hidden ---- */
+.hidden {
+  display: none;
+}
+
+/* ---- Ornaments ---- */
+.ornament {
+  position: absolute;
+  opacity: 0.08;
+  font-size: 4rem;
+  pointer-events: none;
+}
+
+.bee { top: 10%; left: 5%; }
+.rain { bottom: 12%; right: 6%; }
+.dance { top: 20%; right: 8%; }
+.sport { bottom: 18%; left: 7%; }
