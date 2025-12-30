@@ -175,12 +175,21 @@ h1 {
   position: relative;
 }
 
+.card {
+  margin: 0;
+}
+
+.card.open {
+  margin: 4vh 0;
+}
+
+
 /* Shared ornament style */
 .ornament {
   position: absolute;
   pointer-events: none;
   color: #6b2e0f;
-  opacity: 0.4;
+  opacity: 0.5;
   filter: grayscale(10%);
 }
 
@@ -214,6 +223,6 @@ h1 {
 
 /* Soften ornaments after opening */
 .card.open .ornament {
-  opacity: 0.06;
+  opacity: 0.3;
 }
 
