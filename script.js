@@ -1,4 +1,4 @@
-const targetDate = new Date("2025-12-31T23:59:59-06:00");
+const targetDate = new Date("2025-12-28T23:59:59-06:00");
 
 const card = document.getElementById("card");
 const seal = document.getElementById("seal");
