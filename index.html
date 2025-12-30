@@ -2,77 +2,88 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Un Regalo para Ti</title>
+  <title>Un regalo para ti</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Subtle background ornaments -->
+<main class="card locked" id="card">
   <div class="ornament bee">🐝</div>
-  <div class="ornament rain">🌧</div>
-  <div class="ornament dance">💃</div>
-  <div class="ornament sport">🏃</div>
+<div class="ornament bee secondary">🐝</div>
+<div class="ornament dance-line">💃</div>
 
-  <main class="card">
-    <h1>Un regalo para ti</h1>
-    <div class="divider"></div>
 
-    <!-- COUNTDOWN -->
-    <section id="countdown-section">
-      <p class="subtitle">Esta carta se abrirá en</p>
+  <h1>Un regalo para ti</h1>
+  <div class="divider"></div>
 
-      <div class="countdown">
-        <div><span id="days">00</span><small>Días</small></div>
-        <div><span id="hours">00</span><small>Horas</small></div>
-        <div><span id="minutes">00</span><small>Min</small></div>
-        <div><span id="seconds">00</span><small>Seg</small></div>
-      </div>
+  <!-- LOCKED STATE -->
+  <section id="lock">
+    <p class="subtitle">Esta carta se abrirá en</p>
 
-      <p class="date">
-        31 de diciembre de 2025 · 11:00 PM<br />
-        <span>Hora Ciudad de México</span>
-      </p>
+    <div class="countdown">
+      <div><span id="days">00</span><small>Días</small></div>
+      <div><span id="hours">00</span><small>Horas</small></div>
+      <div><span id="minutes">00</span><small>Min</small></div>
+      <div><span id="seconds">00</span><small>Seg</small></div>
+    </div>
 
-      <div class="seal">
-        <div class="seal-inner">✶</div>
-      </div>
+    <p class="date">
+      31 de diciembre de 2025 · 11:59:59 PM<br>
+    </p>
 
-      <p class="locked-text">
-        Esta carta está sellada.<br />
-        <em>Manéjala con cuidado.</em>
-      </p>
-    </section>
+    <button id="seal" aria-label="Abrir carta">
+      ✶
+    </button>
 
-    <!-- LETTER -->
-    <section id="letter-section" class="hidden">
-      <h2>Querida persona,</h2>
+    <p id="lock-text" class="locked-text">
+      Esta carta está sellada.<br>
+      <em>Manéjala con cuidado.</em>
+    </p>
+  </section>
 
-      <p>
-        Si estás leyendo esto, entonces el tiempo finalmente hizo su trabajo.
-        Esta carta existió primero como una intención, luego como paciencia,
-        y ahora como un momento compartido.
-      </p>
+  <!-- LETTER -->
+  <section id="letter">
+    <p class="handwritten">Querida persona,</p>
 
-      <p>
-        Este año estuvo lleno de movimiento, de silencios necesarios,
-        de pasos torpes y otros decididos. Hubo lluvia que limpió,
-        ritmo que sostuvo, esfuerzo que cansó… y aun así, aquí estamos.
-      </p>
+    <p class="handwritten">
+      Si estás leyendo esto, entonces el tiempo finalmente hizo su trabajo.
+      Esta carta existió primero como una intención, luego como paciencia,
+      y ahora como un momento compartido.
+    </p>
 
-      <p>
-        Que el año que comienza te encuentre ligera,
-        curiosa,
-        y con espacio suficiente para bailar incluso cuando no haya música.
-      </p>
+    <p class="handwritten">
+      Hubo lluvia que limpió, pasos que cansaron,
+      ritmo que sostuvo… y aun así, aquí estamos.
+      Que el año que comienza te encuentre ligera,
+      curiosa, y con espacio suficiente para bailar
+      incluso cuando nadie esté mirando.
+    </p>
 
-      <p class="signature">
-        Con cariño,<br />
-        <strong>— Alguien que pensó en ti</strong>
-      </p>
-    </section>
-  </main>
+    <p class="handwritten">
+      Hubo lluvia que limpió, pasos que cansaron,
+      ritmo que sostuvo… y aun así, aquí estamos.
+      Que el año que comienza te encuentre ligera,
+      curiosa, y con espacio suficiente para bailar
+      incluso cuando nadie esté mirando.
+    </p>
 
-  <script src="script.js"></script>
+    <p class="handwritten">
+      Hubo lluvia que limpió, pasos que cansaron,
+      ritmo que sostuvo… y aun así, aquí estamos.
+      Que el año que comienza te encuentre ligera,
+      curiosa, y con espacio suficiente para bailar
+      incluso cuando nadie esté mirando.
+    </p>
+
+    <p class="handwritten signature">
+      Con cariño,<br>
+      — Alguien que pensó en ti
+    </p>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
