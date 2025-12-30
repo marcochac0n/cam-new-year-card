@@ -60,7 +60,9 @@ seal.addEventListener("click", () => {
   playSealSound();
   seal.classList.add("opened");
   card.classList.add("open");
+  lockText.style.display = "none";
 });
+
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
